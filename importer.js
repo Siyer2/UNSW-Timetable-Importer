@@ -23,7 +23,7 @@ function login() {
 
             //==== Get timetable ====//
             // Click 'My Student Profile'
-            await page.click(`a[id='pt1:pt_gl3j_id_1']`); // Need to check whether sign in was successful here
+            await page.click(`a[id='pt1:pt_gl3j_id_1']`); // TODO: Handle if sign in WASN'T successful
             await page.waitForNavigation();
             console.log("Successfully clicked My Student Profile...");
 
@@ -61,6 +61,6 @@ function login() {
 
         return;
     } catch (e) {
-        
+
     }
 })();
